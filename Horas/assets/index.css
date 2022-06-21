@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    user-select: none;
+
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+a:link {
+    text-decoration: none;
+}
+
+body {
+
+    height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+.img {
+    
+    position: fixed;
+    
+    top:-20%;
+
+    left: 65%;
+
+    width: 80%;
+
+    z-index: -9;
+
+}
+
+.relogio{
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-around;
+
+    height: 0px;
+    
+    width: 550px;
+
+    background: transparent;
+
+    border-radius: 3px;
+
+    box-shadow: 0px 8px 10px rgb(0, 0, 0, .5);
+
+}
+
+.relogio div {
+
+    height: 250px;
+
+    width: 180px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #fff;
+
+    background: rgba(5,5,5, 0.9);
+
+    box-shadow: 5px 5px 15px rgba(0,0,0, .7);
+
+    border-radius: 7px;
+
+    transition: 2.5s;
+
+    letter-spacing: 3px;
+
+}
+.relogio div:hover {
+
+    transition: 1.5s;
+    
+    height: 280px;
+    background: linear-gradient(120deg, #3dffdfb8, #000000da);
+
+}
+.relogio h1:hover {
+    font-size: 70px;
+    
+    transition: 1.5s;
+}
+.relogio span {
+
+    font-weight: bolder;
+
+    font-size: 60px;
+
+}
+
+#tempo {
+    
+    font-size: 10px;
+
+}
+
+#nav-bar {
+    position: absolute;
+    top: 15%;
+    text-align: center;
+    left: 24%;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 50%;
+}
+
+#nav-bar ul li  {
+
+    display: inline-flex;
+
+    border-radius: 10px;
+     padding: 10px 20px;
+
+}
+
+#nav-bar li  {
+
+    color: white;
+
+    padding: 20px;
+
+    background-color: #00000000;
+
+}
+
+#nav-bar li:hover {
+
+    transition: 0.5s;
+
+    cursor: pointer;
+
+    background: #000000da;
+
+    color: #3dffdfb8;
+
+} 
+
+button {
+    padding: 15px;
+    
+    background-color: transparent;
+
+    color: white;
+    
+    border: none;
+
+    width: 10%;
+    
+}
+#iniciar  {
+    position: absolute;
+    top: 75%; 
+    border-radius: 18px;
+    cursor: pointer;
+    transition: 2.5s;
+    background: linear-gradient(120deg, #000000da, #000000da);
+}
+#Pausar  {
+    position: absolute;
+    top: 75%;
+    left: 34%;
+    border-radius: 18px;
+    display: none;
+    cursor: pointer;
+    transition: 2.5s;
+    background: linear-gradient(120deg, #000000da, #000000da);}
+#Zerar  {
+    position: absolute;
+    top: 75%;
+    border-radius: 18px;
+    display: none;
+    transition: 2.5s;
+    left: 56%;
+    cursor: pointer;
+    background: linear-gradient(120deg, #000000da, #000000da    );
+}
+#Zerar:hover {
+    background: red;
+    transition: 0.8s;
+}
+#Pausar:hover {
+    background: yellow;
+    transition: 0.8s;
+}
+#iniciar:hover {
+    background: green;
+    transition: 0.8s;
+}
+.button {
+    position: absolute;
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    left: 5%;
+    font-size: 25px;
+    font-weight: bold;
+    top: 10%;
+    color: white;
+}
+#demo {
+    visibility: hidden;
+}
+#bomdia {
+    position: absolute;
+    top: 78%;
+    background-color: #000000da;
+    border-radius: 15px;
+
+    font-weight: bolder;
+}
+#bomdia:hover {
+    background-color: rgba(255, 255, 0, 0.466);
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 320px) {
+
+    #nav-bar {
+        position: absolute;
+        left: 0%;
+    }
+    #nav-bar ul li { 
+
+        font-size: 13px;
+        width: 100%;
+        left: 0%;
+        text-align: left;
+        
+    }
+    
+    body {
+        position: absolute;
+
+        background-color: #115247b8;
+
+        width: 100%;
+
+    }
+    .relogio {
+        position: absolute;
+        top: 50%;
+        display: block;
+        left: 20%;
+        padding: 5px;
+        box-shadow: 0px 0px 0px rgb(0, 0, 0, .5);
+
+    }
+    .relogio div {
+        padding: 10px;
+    }
+    .img {
+        visibility: hidden;
+    }
+   #iniciar {
+    position: absolute;
+    top: 42%;
+    width: 20%;
+    padding-bottom: 10px;
+   }
+   #Pausar {
+    position: absolute;
+    top: 42%;
+    width: 20%;
+   }
+   #Zerar {
+    position: absolute;
+    top: 42%;
+    width: 20%;
+   }
+   #bomdia {
+    position: absolute;
+    top: 220%;
+    width: 100%;
+    border-radius: 0px;
+   }
+   .relogio {
+    width: 50%;
+   }
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    background: linear-gradient(120deg, #27b69eb8, #000000da);
+
+    justify-content: center;
+  }
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/index.css">
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />            
+
+    <title>Data Local - Digital</title>
+
+</head>
+
+<body id="body">
+    
+    <div class="logo">
+        
+        <span><font style="color: #000000da;">New</font>Speed_</span>
+
+    </div>
+ 
+    <header>
+
+        <nav id="nav-bar">
+            
+            <ul>
+                <a href="./hora.html"><li title="Horas" id="home">Hora Atual</li></a>
+
+                <a href="./index.html"><li title="Contagem">Contador</li></a>
+                
+                <a href="./Data.html"><li title="Contagem">Data Local</li></a>
+
+                <li style="background: #000000da; color: #3dffdfb8;"><i class='fa fa-music'></i></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <audio id="chuva" src="./sound/chuva.mp4" style="display: none;" loop></audio>
+   
+    <audio id="lareira" src="./sound/Lareira.mp4" style="display: none;" loop></audio>
+   
+    <audio id="piano" src="./sound/Piano.mp4" style="display: none;" loop></audio>
+    
+    <audio id="bom" src="./sound/Pharrell.mp4" style="display: none;"></audio>
+    
+    <div class="relogio">
+
+        <div onclick="chuva();" style="cursor: pointer; ">
+
+            <span><i class='fa-solid fa-droplet'></i></span>
+
+            <span id="tempo">Chuva</span>
+
+        </div>
+
+        <div onclick="lareira();"  style="cursor: pointer; ">
+
+            <span id="mes"><i class='fa-solid fa-fire-flame-curved'></i></span><br>
+
+            <span id="tempo">Lareira</span>
+
+        </div>
+
+        <div onclick="piano();" style="cursor: pointer;">
+
+            <span id="ano"><i class='fa fa-music'></i></span><br>
+
+            <span id="tempo">Piano & Chuva</span>
+
+        </div>
+
+    </div>
+
+<button id="bomdia" onclick="stop();">Bom dia!</button>
+
+<script>
+
+function chuva() {
+document.getElementById("chuva").play();
+
+document.getElementById("lareira").pause();
+
+document.getElementById("piano").pause();
+
+document.getElementById("bom").pause();
+
+}
+
+function lareira() {
+
+document.getElementById("lareira").play();
+
+document.getElementById("chuva").pause();
+
+document.getElementById("piano").pause();
+
+document.getElementById("bom").pause();
+
+}
+
+function piano() {
+
+document.getElementById("piano").play();
+
+document.getElementById("lareira").pause();
+
+document.getElementById("chuva").pause();
+
+document.getElementById("bom").pause();
+
+}
+function stop() {
+    document.getElementById("lareira").pause();
+
+    document.getElementById("chuva").pause();
+
+    document.getElementById("piano").pause();
+
+    document.getElementById("bom").play();
+}
+
+</script>  
+
+</body>
+
+</html>

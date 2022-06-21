@@ -1,0 +1,112 @@
+    <!DOCTYPE html>
+
+    <html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="assets/index.css">
+
+
+        <title>Relógio Digital</title>
+
+    </head>
+
+    <body id="body">
+        
+        <div class="logo">
+
+            <span><font style="color: #000000da;">New</font>Speed_</span>
+
+        </div>
+
+        <header>
+
+            <nav id="nav-bar">
+                
+                <ul>
+
+                    <a href="#"><li title="Horas" style="background: #000000da; color: #3dffdfb8;" id="home">H</li></a>
+
+                    <a href="./index.html"><li title="Contagem">Contador</li></a>
+                    
+                    <a href="./Data.html"><li title="Contagem">Data Local</li></a>
+
+                    <a href="./Musics.html"><li>Música para Dormir</li></a>
+
+                </ul>
+
+            </nav>
+
+        </header>
+
+        <div class="relogio">
+
+            <div style="background: linear-gradient(120deg, #3dffdfb8, #000000da);">
+
+                <span id="horas" >00</span>
+
+                <span id="tempo">Horas</span>
+
+            </div>
+
+            <div>
+
+                <span id="minutos">00</span>
+
+                <span id="tempo">Minutos</span>
+
+            </div>
+
+            <div>
+
+                <span id="segundos">00</span>
+
+                <span id="tempo">Segundos</span>
+
+            </div>
+
+        </div>
+
+        <script src="Javascript/horas.js"></script>
+
+        <script src="Javascript/redirecionamento.js"></script>
+
+        <img src="./img/—Pngtree—people are working near a_7537101.png" alt="" srcset="" class="img">
+        
+
+        <script>
+            
+    const formatar = (data) => {
+
+    const ano = data.getFullYear();
+
+    const mes = (`00${data.getMonth() + 1}`).slice(-2);
+
+    const dia = (`00${data.getDate()}`).slice(-2);
+
+    };
+
+    document.getElementById("demo").innerHTML = formatar(new Date());
+
+    const ano = (data) => {
+        
+        const ano = data.getFullYear();
+
+        return `${ano}`;
+    };
+
+    document.getElementById("ano").innerHTML = ano(new Date());
+
+        </script>
+        
+    </body>
+
+    </html>

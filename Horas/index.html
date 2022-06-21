@@ -1,0 +1,90 @@
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/index.css">
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+    <title>Contador Digital</title>
+
+</head >
+
+<body id="body">
+
+    <audio id="sound" src="Play.mp4" style="display: none;"></audio>
+
+    <div class="logo">
+        <span><font style="color: #000000da;">New</font>Speed_</span>
+    </div>
+
+    <header>
+
+        <nav id="nav-bar">
+            
+            <ul>
+
+                <a href="./hora.html"><li title="Horas" id="home">Hora Atual</li></a>
+                
+                <a href="#"><li title="Contagem" style="background: #000000da; color: #3dffdfb8;">C</li></a>
+
+                <a href="./Data.html"><li title="Contagem">Data Local</li></a>
+
+                <a href="./Musics.html"><li>Música para Dormir</li></a>
+                
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <div class="relogio">
+
+        <div style="background: linear-gradient(120deg, #3dffdfb8, #000000da);">
+
+            <span id="shoras">00</span>
+
+            <span id="tempo">Horas</span>
+
+        </div>
+
+        <div>
+
+            <span id="sminutos">00</span>
+
+            <span id="tempo">Minutos</span>
+
+        </div>
+
+        <div>
+
+            <span id="ssegundos">00</span>
+
+            <span id="tempo">Segundos</span>
+
+        </div>
+
+    </div>
+
+    <img src="./img/—Pngtree—people are working near a_7537101.png" alt="" srcset="" class="img">
+
+    <button onclick="start();"  id="iniciar"><i class='fa fa-play'></i></button>
+
+    <button onclick="pause();"  id="Pausar"><i class='fa fa-stop'></i></button>
+
+    <button onclick="stop();"  id="Zerar"><i class='fa fa-refresh'></i></button>
+
+    <script src="./Javascript/contador.js"></script>
+
+ 
+</body>
+
+</html>
