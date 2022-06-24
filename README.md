@@ -1,6 +1,6 @@
-# NewSpeed
+# NewSpeed_
 
-- É o nome do meu projeto baseado em algumas vezes, ou fases da minha vida aonde que o tempo era perdido.
+- É o nome do meu projeto baseado em algumas vezes, ou fases da minha vida aonde que existia a perda de tempo e 0 produtividade.
 
 ## Esse mini projeto é feito simplesmente para Relaxamento mental, e físico.
 
