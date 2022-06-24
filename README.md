@@ -2,6 +2,8 @@
 
 - É o nome do meu projeto baseado em algumas vezes, ou fases da minha vida aonde que existia a perda de tempo e 0 produtividade.
 
+- Atualmente eu utilizo esse sistema de contador, para ajudar a definir tempo de estudo.
+
 ## Esse mini projeto é feito simplesmente para Relaxamento mental, e físico.
 
 - Músicas para Dormir
